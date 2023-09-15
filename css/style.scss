@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #4e4d4d;
+  }
+  input,
+  textarea,
+  select {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: #4e4d4d;
+    margin: 10px 0;
+  }
+  button {
+    background-color: #485ecc;
+    color: #fff9f9;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: #1735cc;
+    }
+  }
+  .error-alert{
+    background-color: #D33737;
+    color: #FFF;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .success-alert{
+    background-color: #09A914;
+    color: #FFF;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  #navbar {
+    display: flex;
+    padding: 10px 15px;
+    h1 {
+        flex-grow: 1;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        li {
+            padding: 0 10px;
+            a {
+                color: #4e4d4d;
+                text-decoration: none;
+              }
+          }
+      }
+  } 
+  main {
+    width: 1000px;
+    height: 25px;
+    margin: auto;
+    section {
+        width: 450px;
+        margin: auto;
+        .group {
+            display: flex;
+            div {
+                flex-grow: 1;
+                text-align: right;
+                align-items: flex-end;
+                a {
+                    font-size: 12px;
+                  }
+              }
+          }
+      }
+  }
+  .container {
+    display: flex;
+  }
+  table {
+    border-collapse: separate;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 25px;
+    width: 100%;
+  }
+  th {
+    text-align: left;
+    padding: 10px 15px;
+  }
+  td {
+    padding: 10px 15px;
+    border-left: none;
+    border-right: none;
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #FFF;
+    p{
+        text-align: center;
+      }
+  }
+ 
+  
+  /*Start register page styles*/
+  #register{
+    h1 {
+        text-align: center;
+        margin-top: 75px;
+  }
+  form {
+    margin-top: 30px;
+  }
+  .group input:first-child {
+    margin-right: 10px;
+  }
+}
+  /*End register page style*/
+  
+  /*Start contact us page style*/
+  #contact{
+    h1 {
+        margin-top: 75px;
+      }
+      form {
+        margin-top: 20px;
+      }
+  }
+  /*End contact us page style*/
+  
+  /*Start login page style*/
+  #login{
+    h1 {
+        margin-top: 75px;
+      }
+      form {
+        margin-top: 20px;
+      }
+  }
+  /*End login page style*/
+  
+  /*Start create group page style*/
+  #create-group{
+    h1 {
+        margin-top: 75px;
+      }
+      form {
+        margin-top: 20px;
+      }
+  }
+  /*End create group page style*/
+  
+  /*Start Invite user page style*/
+  #invite-user{
+    h1 {
+        margin-top: 75px;
+        margin-bottom: 50px;
+      }
+      form {
+        margin-top: 20px;
+      }
+  } 
+  /*End Invite user page style*/
+  
+  /*Start add expense page style*/
+  #add-expense {
+    h1 {
+        margin-top: 75px;
+      }
+      form {
+        margin-top: 20px;
+        padding-bottom: 90px;
+      }
+  }
+  /*End add expense page style*/
+  
+  /*Start manage profile page style*/
+  #manage-profile {
+    h1 {
+        margin-top: 75px;
+      }
+      form {
+        margin-top: 20px;
+      }
+      .group input:first-child {
+        margin-right: 10px;
+      }
+  }
+  /*End manage profile page style*/
+  
+  /*Start group page style*/
+  #group {
+    width: 1000px;
+  }
+  #group h1,
+  #group h3 {
+    margin-top: 25px;
+  }
+  #group .container .participants {
+    padding-left: 100px;
+  }
+  #group .container .participants ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 30px;
+  }
+  #group .container .participants b {
+    margin-left: 25px;
+  }
+  /*End group page style*/
+  
+  /*Start add scan page style*/
+  #add-scan {
+    width: 1000px;
+  }
+  #add-scan h1 {
+    margin: 35px 0;
+  }
+  #add-scan form {
+    margin-top: 25px;
+  }
+  /*End add scan page style*/
+  
+  /*Start expenses page style*/
+  #expenses {
+    width: 1000px;
+  }
+  #expenses h1,
+  #expenses h3 {
+    margin-top: 25px;
+  }
+  #expenses .group input:first-child {
+      margin-right: 10px;
+    }
+  #expenses .container .search {
+    padding-left: 100px;
+    width: 375px;
+  }
+  /*End expenses page style*/
+  
+  /*Start groups list page style*/
+  #groups-list {
+      width: 1000px;
+    }
+    #groups-list h1,
+    #groups-list h3 {
+      margin-top: 25px;
+    }
+    #groups-list .container .invitations {
+      padding-left: 75px;
+    }
+    #groups-list .container .invitations ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 30px;
+    }
+    #groups-list .container .invitations .btn-reject {
+      background-color: #D33737;
+      margin-left: 75px;
+    }
+    #groups-list .container .invitations .btn-reject:hover {
+      background-color: #E71212;
+    }
+    #groups-list .container .invitations .btn-accept {
+      background-color: #24D630;
+  }
+  #groups-list .container .invitations .btn-accept:hover {
+      background-color: #09A914;
+  }
+  #groups-list .container .participants-table td:nth-child(2){
+      color: #24D630;
+  }
+  #groups-list .container .participants-table td:nth-child(3){
+      color: #D33737;
+  }
+    /*End groups list page style*/
+  

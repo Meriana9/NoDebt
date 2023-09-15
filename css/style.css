@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4e4d4d;
+}
+
+input,
+textarea,
+select {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #ccc;
+  width: 100%;
+  color: #4e4d4d;
+  margin: 10px 0;
+}
+
+button, .btn {
+  background-color: #485ecc;
+  color: #fff9f9;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-sm{
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
+button:hover, .btn:hover {
+  background-color: #1735cc;
+}
+
+.btn-reject {
+  background-color: #D33737;
+}
+.btn-reject:hover {
+  background-color: #E71212;
+}
+.btn-accept {
+  background-color: #24D630;
+}
+.btn-accept:hover {
+  background-color: #09A914;
+}
+
+.error-alert {
+  color: #D33737;
+  padding: 8px 10px;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success-alert {
+  color: #09A914;
+  padding: 8px 10px;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #485ecc;
+}
+
+#navbar ul li, #navbar ul div {
+  padding: 0 10px;
+}
+
+#navbar ul li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: #FFF;
+  font-weight: bold;
+}
+
+#navbar .user-info{
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+}
+
+main {
+  width: 1500px;
+  height: 25px;
+  margin: auto;
+}
+
+main section {
+  width: 450px;
+  margin: auto;
+}
+
+main section .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section .group div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.group-data{
+  margin-top: 25px;
+  border-left: 3px solid #485ecc;
+  padding-left: 20px;
+}
+
+main section .group div a {
+  font-size: 12px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: separate;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding: 10px 15px;
+}
+
+td {
+  padding: 10px 15px;
+  border-left: none;
+  border-right: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #FFF;
+}
+
+footer p {
+  text-align: center;
+}
+
+h1, h3{
+  margin-top: 75px;
+}
+
+#register h1, #login h1 {
+  text-align: center;
+}
+
+form{
+  margin-top: 30px;
+}
+
+#add-expense form {
+  padding-bottom: 90px;
+}
+
+.form-btn{
+  margin: 0;
+  display: inline;
+}
+
+/*Start register page styles*/
+#register .logo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#register .group input:first-child {
+  margin-right: 10px;
+}
+
+/*End register page style*/
+/*Start login page style*/
+#login .logo {
+  text-align: center;
+  margin: 20px 0;
+}
+/*End login page style*/
+/*Start manage profile page style*/
+#manage-profile .group input:first-child {
+  margin-right: 10px;
+}
+
+/*End manage profile page style*/
+/*Start group page style*/
+#group {
+  width: 1000px;
+}
+
+#group .container .participants {
+  padding-left: 100px;
+}
+
+#group .container .participants ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+#group .container .participants b {
+  margin-left: 25px;
+}
+
+/*End group page style*/
+/*Start add scan page style*/
+#add-scan {
+  width: 1000px;
+}
+/*End add scan page style*/
+/*Start expenses page style*/
+#expenses {
+  width: 100%;
+}
+
+#expenses .group input:first-child {
+  margin-right: 10px;
+}
+
+#expenses .container .search {
+  padding-left: 100px;
+}
+
+/*End expenses page style*/
+/*Start groups list page style*/
+#groups-list {
+  width: 100%;
+}
+
+#groups-list h1,
+#groups-list h3 {
+  margin-top: 25px;
+}
+
+#groups-list .container .invitations {
+  padding-left: 100px;
+}
+
+#groups-list .container .invitations form {
+  display: inline;
+}
+
+#groups-list .container .invitations ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+#groups-list .container .participants-table td:nth-child(2) {
+  color: #24D630;
+}
+
+#groups-list .container .participants-table td:nth-child(3) {
+  color: #D33737;
+}
+
+/*End groups list page style*/
+/*# sourceMappingURL=style.css.map */

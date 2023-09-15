@@ -1,0 +1,10 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION["email"])){
+    header("location:login.php");
+    exit();
+}
+
+$SESSION_EMAIL = $_SESSION["email"];
